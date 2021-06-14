@@ -17,3 +17,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*  ẨN NÚT SHOW-HIDE SIDEBAR */
+.ant-layout-sider-zero-width-trigger{
+  display: none;
+}

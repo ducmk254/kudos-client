@@ -1,0 +1,99 @@
+
+.profile-tab__one{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+.profile-tab_one-info{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.profile-tab_one-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-tab_one-icon{
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .3rem;
+    background-color: #ccc;
+    color: rgb(131, 127, 127);
+    border-radius: 50%;
+
+    transition: all .2s ease-in;
+}
+.profile-tab_one-icon:hover{
+    background-color: rgb(158, 12, 139);
+    color: rgb(235, 225, 225);
+}
+.profile-tab_one__list{
+    width: 100%;
+    list-style: none;
+    
+}
+.profile-tab_one__list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: .4rem 0;
+}
+.profile-tab_one__list>li>div{
+    width: 50%;
+    font-weight: bold;
+}
+.profile-tab_one__list>li>span{
+    width: 50%;
+    color: rgb(122, 115, 115);
+    font-weight: bold;
+}
+.profile-tab_one-contact{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+.profile-tab_one-bottom{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+.profile-tab_one-bank{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+.profile-tab_one-family{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+.profile-tab_one-edu{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+.profile-tab_one-experience{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    padding: 1rem;
+}

@@ -1,25 +1,25 @@
 import React from "react";
-import { Layout, Breadcrumb } from "antd";
-
+import { Layout } from "antd";
+import "./index.css";
 import SideMenu from "./SideMenu";
 import HeaderMenu from "./HeaderMenu";
-import Footers from "./Footers";
+import CustomMenu from "./CustomMenu";
+// import Footers from "./Footers";
 const { Content } = Layout;
-
 const AppRoute = ({ children }) => {
   return (
     <Layout>
-      <HeaderMenu />
+      <HeaderMenu menu={CustomMenu} />
       <Layout>
-        <SideMenu />
+        <SideMenu breakpoint={"lg"} />
         <Layout style={{ padding: "0 24px 24px" }}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
+          {/* <Breadcrumb style={{ margin: "16px 0" }}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
             <Breadcrumb.Item>List</Breadcrumb.Item>
             <Breadcrumb.Item>App</Breadcrumb.Item>
-          </Breadcrumb>
+          </Breadcrumb> */}
           <Content
-            className="site-layout-background"
+            className="site-layout-background site-layout-backgroud__note"
             style={{
               padding: 24,
               margin: 0,
@@ -30,9 +30,9 @@ const AppRoute = ({ children }) => {
           </Content>
         </Layout>
       </Layout>
-      <Layout>
+      {/* <Layout>
         <Footers />
-      </Layout>
+      </Layout> */}
     </Layout>
   );
 };

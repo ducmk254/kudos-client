@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+.ant-drawer-body {
+    padding: 0;
+}
+.header{
+    width: 100%;
+    background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem ;
+}
+.header img{
+    
+    flex-grow: 1;
+    color: white;
+    cursor: pointer;
+}
+.header .nav-primary{
+    
+}
+
+.nav-primary {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.nav-primary__item{
+    margin: .5rem 1rem;
+}
+.nav-primary__item:hover{
+    color: blueviolet;
+}
+
+.nav-primary-active{
+    color: blueviolet;
+}
+
+.nav-profile{
+    background-color: rgb(74, 199, 199);
+    color: black;
+    font-weight: bold;
+    border: .5px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.nav-profile .avatar{
+    color: inherit;    
+}
+
+.nav-search__form{
+    border: 0px solid red;
+    border-radius: 1rem;
+    padding: .3rem .6rem;
+    /* background: linear-gradient(to right, #667eea 0%, #764ba2 100%); */
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255,.1);
+}
+.nav-search__input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: .3rem .6rem;
+    background:transparent;
+    color: white;
+}
+.nav-search__input::placeholder{
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+}
+.nav-search__icon{
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    color: rgba(255,255,255,1);
+
+}
+
+/* Màu cho sub-menu*/
+.ant-menu-dark .ant-menu-inline.ant-menu-sub{
+    background-color:#343a40;
+}
+
+.ant-menu-title-content::selection{
+    background-color: rgba(41,54,61);
+}
+/*
+Màu cho Dashboard header
+*/
+.ant-drawer-header{
+    background-color: #343a40;
+}
+.ant-drawer-title{
+    color: white;
+}
+.show-hide-top-menu{
+    color: white;
+    font-size: 1.5rem;
+}
+.anticon-close{
+    color: red;
+}
+
+
+@media screen and (min-width:991px) {
+    .ant-btn-icon-only {
+        display: none;
+    }
+
+}
