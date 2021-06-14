@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import { Button, Layout } from "antd";
+
 import { MenuOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 import "./HeaderMenu.css";
 import { SearchOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
+import TopicMenu from "./TopicMenu";
+// import SideMenu from "./SideMenu";
 // const { Header } = Layout;
-function HeaderMenu({ menu }) {
+function HeaderMenu({ children }) {
   // const location = useLocation();
   const [visible, setVisible] = useState(false);
+  const onClick = () => {
+    setVisible(false);
+  };
   return (
     <div className="header">
       <Button
@@ -20,13 +26,15 @@ function HeaderMenu({ menu }) {
       <Drawer
         title="Dashboard"
         placement="left"
-        onClick={() => setVisible(false)}
+        // onClick={onClick}
+
         onClose={() => setVisible(false)}
         visible={visible}
         className="show-hide-top-menu"
       >
-        {menu}
+        <TopicMenu handleOnClick={onClick} />
       </Drawer>
+
       <NavLink
         activeClassName="nav-primary-active"
         to="/"

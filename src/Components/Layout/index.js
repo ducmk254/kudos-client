@@ -3,13 +3,13 @@ import { Layout } from "antd";
 import "./index.css";
 import SideMenu from "./SideMenu";
 import HeaderMenu from "./HeaderMenu";
-import CustomMenu from "./CustomMenu";
+
 // import Footers from "./Footers";
 const { Content } = Layout;
 const AppRoute = ({ children }) => {
   return (
     <Layout>
-      <HeaderMenu menu={CustomMenu} />
+      <HeaderMenu></HeaderMenu>
       <Layout>
         <SideMenu breakpoint={"lg"} />
         <Layout style={{ padding: "0 24px 24px" }}>

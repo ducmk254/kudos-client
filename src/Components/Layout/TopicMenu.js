@@ -4,14 +4,11 @@ import {
   UserOutlined,
   LaptopOutlined,
   NotificationOutlined,
-  // MailOutlined,
-  // AppstoreOutlined,
-  // SettingOutlined,
 } from "@ant-design/icons";
 import { useLocation, NavLink } from "react-router-dom";
 
 const { SubMenu } = Menu;
-function TopicMenu(props) {
+function TopicMenu({ handleOnClick }) {
   const rootSubmenuKeys = [
     { config: "Cấu hình" },
     { hr: "Nhân sự" },
@@ -43,10 +40,6 @@ function TopicMenu(props) {
     }
   };
   const location = useLocation();
-  // const [collapsed, setCollapsed] = useState(false);
-  // const toggleCollapsed = () => {
-  //   setCollapsed(!collapsed);
-  // };
 
   const [openKeys, setOpenKeys] = useState(rootSubmenuKeys[1][1]);
 
@@ -76,7 +69,7 @@ function TopicMenu(props) {
             >
               {items.map((item, id) => {
                 return (
-                  <Menu.Item key={`/${item[0]}`}>
+                  <Menu.Item key={`/${item[0]}`} onClick={handleOnClick}>
                     <NavLink to={`/${item[0]}`}>{item[1]}</NavLink>
                   </Menu.Item>
                 );
