@@ -111,6 +111,14 @@ Màu cho Dashboard header
 .anticon-close{
     color: red;
 }
+.ant-btn-icon-only {
+    background: transparent;
+    border:transparent;
+}
+.ant-btn-icon-only:hover {
+    background: transparent;
+    border:transparent;
+}
 
 
 @media screen and (min-width:991px) {

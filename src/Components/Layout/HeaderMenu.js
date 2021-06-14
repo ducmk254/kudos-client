@@ -10,19 +10,11 @@ function HeaderMenu({ menu }) {
   // const location = useLocation();
   const [visible, setVisible] = useState(false);
   return (
-    <Layout.Header className="header">
+    <div className="header">
       <Button
         className="menu"
         type="primary"
-        icon={
-          <MenuOutlined
-            style={{
-              width: "32px",
-              height: "32px",
-              textAlign: "center",
-            }}
-          />
-        }
+        icon={<MenuOutlined style={{ fontSize: "2rem" }} />}
         onClick={() => setVisible(true)}
       />
       <Drawer
@@ -82,7 +74,7 @@ function HeaderMenu({ menu }) {
           L
         </div>
       </NavLink>
-    </Layout.Header>
+    </div>
   );
 }
 export default HeaderMenu;
