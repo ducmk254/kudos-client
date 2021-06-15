@@ -53,6 +53,7 @@ function TopicMenu({ handleOnClick }) {
         height: "100%",
         borderRight: 0,
         backgroundColor: "#343a40",
+        fontWeight: "bold",
       }}
       theme="dark"
     >

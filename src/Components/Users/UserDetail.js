@@ -27,6 +27,7 @@ function UserDetail(props) {
             <p className="user-detail__header-joindate">
               Ngày sinh: 06/05/2021
             </p>
+            <p className="user-detail__header-id">Points: 2,300 </p>
             <div className="user-detail__header-sendmessage">
               <a href="#">send mesage</a>
             </div>
