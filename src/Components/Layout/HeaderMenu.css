@@ -6,35 +6,51 @@
 }
 .header{
     width: 100%;
+    height: 100%;
     background: linear-gradient(to right, #c340eb 0%, #764ba2 100%);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem .5rem ;
+    padding: 1rem 1rem .3rem 1rem;
 }
-.header img{
-    
-    color: white;
-    cursor: pointer;
+.header-left{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+/* STYLE FOR BUTTON SIDEBAR */
+.ant-btn-icon-only {
+    background: transparent;
+    border:transparent;
+    display: block;
 
-
-.nav-primary {
+    margin-left: 2rem;
+}
+.ant-btn-icon-only:hover {
+    background: transparent;
+    border:transparent;
+}
+.header-left__link{
+    display: inline-block;
+    width: 10rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
-.nav-primary__item{
-    margin: .5rem 0rem;
+.header-left__logo{
+    width: 100%;
+    height: 40px;
 }
-.nav-primary__item:hover{
-    color: blueviolet;
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.nav-primary-active{
-    color: blueviolet;
-}
+
 
 
 /* Style for search form*/
@@ -47,7 +63,10 @@
     opacity: .8;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(255,255,255,.1);
+
+    margin-right: 1rem;
 }
 .nav-search__input{
     border: none;
@@ -123,19 +142,48 @@ Màu cho Dashboard header
 .anticon-close{
     color: red;
 }
-.ant-btn-icon-only {
-    background: transparent;
-    border:transparent;
-}
-.ant-btn-icon-only:hover {
-    background: transparent;
-    border:transparent;
-}
 
+/* RESPONSIVE FOR HEADER MENU BAR */
+@media screen and (max-width:989px) {
+    .header-left{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: center;
 
-@media screen and (min-width:991px) {
-    .ant-btn-icon-only {
+        padding-right: 5rem;
+    }
+  }
+  
+@media screen and (max-width:768px) {
+    .header-left__logo{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+  }
+@media screen and (max-width:576px) { 
+    .header-left{
+        width: 50%;
+        padding-right: 0rem;
+    }
+    .header-right{
+        padding-right: 1rem;
+    }
+    .header-left__link{
+        width: 0;
+    }
+   .header{
+       padding: .3rem 0 .3rem 0;
+   }
+   .ant-btn-icon-only{
+       margin-left: 1rem;
+   }
+   
+   
+  }
+
+@media  screen and (max-width:450px) {
+    .nav-search__form{
         display: none;
     }
-
 }

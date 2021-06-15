@@ -143,7 +143,7 @@
   
   
   
-  @media screen and (max-width:768px) {/* cong them 200px cua sider */
+  @media screen and (max-width:768px) {
     .list-user{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -155,7 +155,7 @@
         grid-gap: 1rem;
     }
   }
-  @media screen and (max-width:576px) { /* cong them 200px cua sider */
+  @media screen and (max-width:576px) { 
     .list-user{
         display: grid;
         grid-template-columns: 1fr;
