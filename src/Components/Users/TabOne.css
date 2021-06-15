@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-
+    background-color: white;
 }
 
 .profile-tab_one-info{
@@ -31,20 +31,19 @@
     font-size: 1rem;
     cursor: pointer;
     padding: .3rem;
-    background-color: #ccc;
-    color: rgb(131, 127, 127);
+    background-color: rgb(230, 230, 230);
+    color: rgb(177, 165, 165);
     border-radius: 50%;
 
     transition: all .2s ease-in;
 }
 .profile-tab_one-icon:hover{
-    background-color: rgb(158, 12, 139);
+    background-color: rgb(228, 130, 215);
     color: rgb(235, 225, 225);
 }
 .profile-tab_one__list{
     width: 100%;
     list-style: none;
-    
 }
 .profile-tab_one__list li{
     display: flex;
@@ -62,6 +61,7 @@
     width: 50%;
     color: rgb(122, 115, 115);
     font-weight: bold;
+
 }
 .profile-tab_one-contact{
     width: 100%;
@@ -96,4 +96,36 @@
     border: 1px solid #ccc;
     border-radius: .3rem;
     padding: 1rem;
+}
+
+/* ICON edit ở thông tin gia đình */
+.profile-tab_one__list-icon{
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+
+    text-align: end;
+}
+.profile-tab_one__list-icon:hover{
+    color: rgb(212, 31, 236);
+}
+
+.ant-table-thead{
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+
+/* Custom for timeline */
+.custom-for-timeline{
+    font-weight: bold;
+}
+/*  reponsive */
+@media screen and (max-width:768px) {
+    .profile-tab__one{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
 }

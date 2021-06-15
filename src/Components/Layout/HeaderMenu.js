@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Layout } from "antd";
+import { Button } from "antd";
 
 import { MenuOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
@@ -9,8 +9,12 @@ import { Drawer } from "antd";
 import TopicMenu from "./TopicMenu";
 function HeaderMenu(props) {
   const [visible, setVisible] = useState(false);
+  const [textSearch, setTextSearch] = useState("");
   const onClick = () => {
     setVisible(false);
+  };
+  const handleInputTextSearch = (e) => {
+    setTextSearch(e.target.value);
   };
   return (
     <div className="header">
@@ -45,7 +49,9 @@ function HeaderMenu(props) {
           type="text"
           placeholder="Tìm kiếm ..."
           className="nav-search__input"
-        ></input>
+          value={textSearch}
+          onChange={handleInputTextSearch}
+        />
         <SearchOutlined className="nav-search__icon" />
       </form>
       {/* <ul className="nav-primary">
@@ -71,10 +77,12 @@ function HeaderMenu(props) {
           Báo cáo
         </NavLink>
       </ul> */}
-      <NavLink className="nav-profile" to="">
-        <div className="nav-avatar" to="">
-          L
-        </div>
+      <NavLink
+        className="nav-profile-link "
+        activeClassName="nav-profile-active"
+        to="#"
+      >
+        <span className="nav-avatar-title">KC</span>
       </NavLink>
     </div>
   );

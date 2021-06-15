@@ -1,11 +1,11 @@
 import React from "react";
 import { Layout, Menu } from "antd";
 import TopicMenu from "./TopicMenu";
-import { NavLink, useLocation } from "react-router-dom";
-const { SubMenu } = Menu;
+// import { NavLink, useLocation } from "react-router-dom";
+
 const { Sider } = Layout;
 function SideMenu({ breakpoint }) {
-  const location = useLocation();
+  // const location = useLocation();
   // console.log(location.pathname);
   return (
     <Sider

@@ -1,0 +1,30 @@
+.pop-over{
+    background-color: white;
+    border: transparent;
+    color: black;
+
+    transform: rotate(90deg);
+
+    outline: none;
+
+}
+.pop-over:hover{
+    color: rgb(224, 38, 209);
+    background:transparent;
+}
+.ant-popover-inner,.ant-popover-content{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.ant-popover-inner-content ul li{
+    list-style: none;
+    width: 100%;
+}
+.ant-popover-inner-content ul li:hover{
+    background-color: red;
+}
+.ant-popover-inner-content ul li a{
+    padding: .2rem .5rem;
+}
+

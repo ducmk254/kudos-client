@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Users.css";
 import { MoreOutlined } from "@ant-design/icons";
 const data = [
@@ -106,16 +106,30 @@ const data = [
   },
 ];
 function Users(props) {
+  const [inputEmployeeId, setInputEmployeeId] = useState("");
+  const [inputEmployeeName, setInputEmployeeName] = useState("");
+  const [inputEmployeeTitle, setInputEmployeeTitle] = useState("");
+
   return (
     <>
       <div className="user-filter">
         <div className="user-filter__id">
           <label>Employee Id</label>
-          <input type="text" className="form-control" />
+          <input
+            type="text"
+            className="form-control"
+            value={inputEmployeeId}
+            onChange={(e) => setInputEmployeeId(e.target.value)}
+          />
         </div>
         <div className="user-filter__id">
           <label>Employee Name</label>
-          <input type="text" className="form-control" />
+          <input
+            type="text"
+            className="form-control"
+            value={inputEmployeeName}
+            onChange={(e) => setInputEmployeeName(e.target.value)}
+          />
         </div>
         <div className="user-filter__id">
           <label>Employee Title</label>

@@ -15,17 +15,17 @@ function UserDetail(props) {
       <div className="user-detail">
         <div className="user-detail__header">
           <img
+            className="user-detail__header-img"
             src="https://smarthr-angular.dreamguystech.com/purple/assets/img/profiles/avatar-1.jpg"
             alt="Mutosi employee"
-            className="user-detail__header-img"
           />
           <div className="user-detail__header-info">
             <h1 className="user-detail__header-name">John Doe</h1>
             <p className="user-detail__header-depart">Phòng HCNS</p>
             <p className="user-detail__header-title">Chuyên viên IT</p>
-            <p className="user-detail__header-id">Empoyee ID: MTS0106309</p>
+            <p className="user-detail__header-id">Mã NV: MTS0106309</p>
             <p className="user-detail__header-joindate">
-              Date of Join: 06/05/2021
+              Ngày sinh: 06/05/2021
             </p>
             <div className="user-detail__header-sendmessage">
               <a href="#">send mesage</a>

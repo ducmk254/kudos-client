@@ -79,7 +79,6 @@
 /* USER DETAIL INFOR*/
 .user-detail__contact{
     width: 100%;  
-    
     flex-grow: 1;
 }
 .user-detail__list{
@@ -131,36 +130,64 @@
 }
 
 /* responsive */
-@media screen and (max-width:968px) {
+@media screen and (max-width:768px) {
     .user-detail{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
     }
     .user-detail__header{
-        border-bottom: 2px dashed #ccc;
+        
         padding-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: center;
     }
     .user-detail__header-info{
         border-right: none;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-bottom: 2px dashed #ccc;
+        padding-bottom: 1rem;
     }
-
-
-    .user-detail__header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .user-detail__contact{
+        padding-left: 130px;
     }
+  
     .user-detail__header-sendmessage a{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    
+  }
+
+@media screen and (max-width:578px){
+    .user-detail__header{
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: center;
+        border-bottom: 2px dashed #ccc;
+    }
+    .user-detail__contact{
+        padding-left: 0;
+    }
+    .user-detail__header-info{
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-bottom: none;
+        padding-bottom: 1rem;
     }
 }
