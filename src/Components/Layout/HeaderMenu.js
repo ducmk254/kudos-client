@@ -7,10 +7,7 @@ import "./HeaderMenu.css";
 import { SearchOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import TopicMenu from "./TopicMenu";
-// import SideMenu from "./SideMenu";
-// const { Header } = Layout;
-function HeaderMenu({ children }) {
-  // const location = useLocation();
+function HeaderMenu(props) {
   const [visible, setVisible] = useState(false);
   const onClick = () => {
     setVisible(false);
@@ -26,15 +23,12 @@ function HeaderMenu({ children }) {
       <Drawer
         title="Dashboard"
         placement="left"
-        // onClick={onClick}
-
         onClose={() => setVisible(false)}
         visible={visible}
         className="show-hide-top-menu"
       >
         <TopicMenu handleOnClick={onClick} />
       </Drawer>
-
       <NavLink
         activeClassName="nav-primary-active"
         to="/"
@@ -43,7 +37,7 @@ function HeaderMenu({ children }) {
         <img
           src="https://mutosi.com/images/config/170x57_1620113130.png"
           alt="mutosi logo"
-          // style={{ width: "50%", height: "50%" }}
+          style={{ width: "80%", height: "80%" }}
         />
       </NavLink>
       <form className="nav-search__form">
@@ -54,7 +48,7 @@ function HeaderMenu({ children }) {
         ></input>
         <SearchOutlined className="nav-search__icon" />
       </form>
-      <ul className="nav-primary">
+      {/* <ul className="nav-primary">
         <NavLink
           activeClassName="nav-primary-active"
           to="/"
@@ -76,7 +70,7 @@ function HeaderMenu({ children }) {
         >
           Báo cáo
         </NavLink>
-      </ul>
+      </ul> */}
       <NavLink className="nav-profile" to="">
         <div className="nav-avatar" to="">
           L
