@@ -1,6 +1,8 @@
 import React from "react";
 import { Table, Tag, Space, Timeline } from "antd";
 // import { EllipsisOutlined } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
 import "./TabOne.css";
 import { EditOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
@@ -28,7 +30,11 @@ const columns = [
     key: "action",
     render: (text, record) => (
       <Space size="middle">
-        <ClickOver className="profile-tab_one__list-icon" />
+        {/* <ClickOver /> */}
+        <FontAwesomeIcon
+          icon={faEllipsisV}
+          className="profile-tab_one__list-icon"
+        />
       </Space>
     ),
   },

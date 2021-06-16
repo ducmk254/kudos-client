@@ -1,4 +1,7 @@
 @import '~antd/dist/antd.css';
+:root{
+  --transparent-color:linear-gradient(to right, #c340eb 0%, #ad63f7 100%);
+}
 *{
   margin: 0;
   padding: 0;
@@ -22,3 +25,4 @@ code {
 .ant-layout-sider-zero-width-trigger{
   display: none;
 }
+

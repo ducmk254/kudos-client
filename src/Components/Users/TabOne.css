@@ -29,6 +29,7 @@
 
 .profile-tab_one-icon{
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     padding: .3rem;
     background-color: rgb(230, 230, 230);
@@ -100,10 +101,10 @@
 
 /* ICON edit ở thông tin gia đình */
 .profile-tab_one__list-icon{
-    transform: rotate(90deg);
-    font-size: 1.5rem;
+    /* transform: rotate(90deg); */
+    font-size: .7rem;
     cursor: pointer;
-    font-weight: bold;
+    color: rgb(172, 169, 166);
 
     text-align: end;
 }

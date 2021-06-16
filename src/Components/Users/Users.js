@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Users.css";
-import { MoreOutlined } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
+
 const data = [
   {
     _id: "a",
@@ -152,7 +154,12 @@ function Users(props) {
                 <span>100</span>
               </a>
             </div>
-            <MoreOutlined className="employee-profiles__toogle" />
+
+            <FontAwesomeIcon
+              icon={faEllipsisV}
+              className="employee-profiles__toogle"
+            />
+
             <h4 className="employee-profiles__name">{item.name}</h4>
             <div className="employee-profiles__title">{item.title}</div>
           </div>
